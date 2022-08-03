@@ -22,7 +22,7 @@ export function Product({product}: ProductProps) {
 
             {details && <div className="border rounded p-2 mt-2">
                 <p>{product.description}</p>
-                <p>Rate: <span style={{fontWeight: "bold"}}>{product.rating.rate}</span></p>
+                <p>Rate: <span style={{fontWeight: "bold"}}>{product?.rating?.rate}</span></p>
             </div>}
         </div>
     );
